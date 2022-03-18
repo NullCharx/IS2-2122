@@ -29,8 +29,10 @@ public class Furgoneta
   
 	@Override
     public double precioImpuesto() {
-    	//TODO
-		return 0;
-    	
+    	double precio = super.precioImpuesto();
+    	if (comercial) {
+    		precio -= precio*0.2;
+    	}
+		return precio;
     }
 }
