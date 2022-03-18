@@ -1,3 +1,5 @@
+package ImpuestoCirculacionCommon;
+
 import java.io.Serializable;
 @SuppressWarnings("serial")
 public class Furgoneta

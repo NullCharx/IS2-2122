@@ -1,3 +1,5 @@
+package ImpuestoCirculacionCommon;
+
 @SuppressWarnings("serial")
 public class OperacionNoValida extends Exception {
 

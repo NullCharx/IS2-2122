@@ -1,3 +1,8 @@
+package ImpuestoCirculacionIntf;
+
+import ImpuestoCirculacionCommon.OperacionNoValida;
+import ImpuestoCirculacionCommon.Vehiculo;
+
 /**
  * Interfaz de negocio para gestionar vehículos
  */

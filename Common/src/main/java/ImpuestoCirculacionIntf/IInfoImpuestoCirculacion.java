@@ -1,3 +1,8 @@
+package ImpuestoCirculacionIntf;
+
+import ImpuestoCirculacionCommon.Contribuyente;
+import ImpuestoCirculacionCommon.Vehiculo;
+
 /**
  * Interfaz de negocio para consultar información sobre 
  * contribuyentes y vehiculos

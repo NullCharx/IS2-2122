@@ -1,4 +1,8 @@
+package ImpuestoCirculacionIDAOs;
+
 import java.util.List;
+
+import ImpuestoCirculacionCommon.Vehiculo;
 
 /**
  * Interfaz DAO para vehiculos

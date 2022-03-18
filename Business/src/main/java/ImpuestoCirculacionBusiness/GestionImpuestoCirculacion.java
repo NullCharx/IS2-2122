@@ -1,3 +1,12 @@
+import ImpuestoCirculacionCommon.Contribuyente;
+import ImpuestoCirculacionCommon.OperacionNoValida;
+import ImpuestoCirculacionCommon.Vehiculo;
+import ImpuestoCirculacionIDAOs.IContribuyentesDAO;
+import ImpuestoCirculacionIDAOs.IVehiculosDAO;
+import ImpuestoCirculacionIntf.IGestionContribuyentes;
+import ImpuestoCirculacionIntf.IGestionVehiculos;
+import ImpuestoCirculacionIntf.IInfoImpuestoCirculacion;
+
 /**
  * Clase que implementa la capa de negocio de la aplicacion
  */

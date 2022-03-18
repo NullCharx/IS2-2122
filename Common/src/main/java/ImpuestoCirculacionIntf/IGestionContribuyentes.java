@@ -1,3 +1,8 @@
+package ImpuestoCirculacionIntf;
+
+import ImpuestoCirculacionCommon.Contribuyente;
+import ImpuestoCirculacionCommon.OperacionNoValida;
+
 /**
  * Interfaz de negocio para gestionar contribuyentes
  */

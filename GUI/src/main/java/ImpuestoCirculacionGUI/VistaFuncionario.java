@@ -1,3 +1,5 @@
+package ImpuestoCirculacionGUI;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -10,6 +12,10 @@ import java.awt.event.ActionEvent;
 import javax.swing.JList;
 
 import javax.swing.border.LineBorder;
+
+import ImpuestoCirculacionCommon.Contribuyente;
+import ImpuestoCirculacionCommon.Vehiculo;
+import ImpuestoCirculacionIntf.*;
 
 import java.awt.Color;
 import javax.swing.JButton;

@@ -1,3 +1,7 @@
+package ImpuestoCirculacionMain;
+
+import ImpuestoCirculacionGUI.VistaFuncionario;
+
 /**
  * Clase principal que construye la aplicación de tres capas y lanza su ejecución
  */
