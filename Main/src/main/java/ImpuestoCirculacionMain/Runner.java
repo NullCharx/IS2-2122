@@ -1,5 +1,8 @@
 package ImpuestoCirculacionMain;
 
+import ImpuestoCirculacionBusiness.GestionImpuestoCirculacion;
+import ImpuestoCirculacionDAO.ContribuyentesDAO;
+import ImpuestoCirculacionDAO.VehiculosDAO;
 import ImpuestoCirculacionGUI.VistaFuncionario;
 
 /**

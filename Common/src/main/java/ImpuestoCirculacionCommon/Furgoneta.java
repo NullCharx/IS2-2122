@@ -1,6 +1,7 @@
 package ImpuestoCirculacionCommon;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 @SuppressWarnings("serial")
 public class Furgoneta
     extends Turismo implements Serializable
@@ -9,7 +10,12 @@ public class Furgoneta
     private double potencia;
     private boolean comercial;
     
-   /**
+   public Furgoneta(String matricula, LocalDate fechaMatriculacion, double potencia, boolean comercial) {
+		super(matricula,fechaMatriculacion,potencia);
+		this.comercial = comercial;
+	}
+
+/**
     * Retorna el valor del atributo comercial
     * @return true si la furgoneta es de uso comercial
     *         false si no es de uso comercial

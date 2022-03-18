@@ -1,11 +1,10 @@
+package ImpuestoCirculacionBusiness;
+
 import ImpuestoCirculacionCommon.Contribuyente;
 import ImpuestoCirculacionCommon.OperacionNoValida;
 import ImpuestoCirculacionCommon.Vehiculo;
-import ImpuestoCirculacionIDAOs.IContribuyentesDAO;
-import ImpuestoCirculacionIDAOs.IVehiculosDAO;
-import ImpuestoCirculacionIntf.IGestionContribuyentes;
-import ImpuestoCirculacionIntf.IGestionVehiculos;
-import ImpuestoCirculacionIntf.IInfoImpuestoCirculacion;
+import ImpuestoCirculacionIDAOs.*;
+import ImpuestoCirculacionIntf.*;
 
 /**
  * Clase que implementa la capa de negocio de la aplicacion
@@ -20,37 +19,84 @@ public class GestionImpuestoCirculacion implements IGestionContribuyentes, IGest
 		this.vehiculos = vehiculos;
 	}
 	
+	/* Metodo auxiliar para buscar contribuyentes */
+	private Contribuyente buscaContribuyente (String dni) {
+		for (Contribuyente c: contribuyentes.contribuyentes()) {
+			if (c.getDni().equals(dni)) {
+				return c;
+			}
+		}
+		return null;
+	}
+	
+	/* Metodo auxiliar para buscar contribuyentes */
+	private Vehiculo buscaVehiculo (String matricula) {
+		for (Vehiculo v: vehiculos.vehiculos()) {
+			if (v.getMatricula().equals(matricula)) {
+				return v;
+			}
+		}
+		return null;
+	}
+	
 	public Contribuyente altaContribuyente(Contribuyente c) {
-		// TODO
+		Contribuyente cont = buscaContribuyente(c.getDni());
+		if (cont != null) {
+			contribuyentes.creaContribuyente(c);
+			return c;
+		}
 		return null;
 	}
 
 	
 	public Contribuyente bajaContribuyente(String dni) throws OperacionNoValida {
-		// TODO
-		return null;		
+		Contribuyente c = buscaContribuyente(dni);
+		
+		if (c == null) {
+			return c;
+		} else {
+			if (!c.getVehiculos().isEmpty()) {
+				throw new OperacionNoValida("El contribuyente tiene vehiculos a su nombre");
+			}
+		}
+		contribuyentes.eliminaContribuyente(c.getDni());
+		return c;		
 	 }
 	
 	public Contribuyente contribuyente(String dni) {
-		// TODO
-		return null;
+		return buscaContribuyente(dni);
 	}
 
 	public Vehiculo altaVehiculo(Vehiculo v, String dni) throws OperacionNoValida {
-		// TODO
-		return null;
+		Contribuyente c = buscaContribuyente(dni);
+		Vehiculo veh = buscaVehiculo(v.getMatricula());
+		if (c == null) {
+			return null;
+		}
+		if (veh != null) {
+			throw new OperacionNoValida("Este vehiculo ya existe");
+		}
+		vehiculos.creaVehiculo(v);
+		c.getVehiculos().add(v);
+		return v;
 	}
 
-	@Override
 	public Vehiculo bajaVehiculo(String matricula, String dni) throws OperacionNoValida {
-		// TODO
-		return null;
+		Contribuyente c = buscaContribuyente(dni);
+		Vehiculo veh = buscaVehiculo(matricula);
+		if (c == null || veh == null) {
+			return null;
+		}
+		if (!c.getVehiculos().contains(veh)) {
+			throw new OperacionNoValida("Este vehiculo no pertenece al contribuyente especificado");
+		}
+		vehiculos.eliminaVehiculo(matricula);
+		c.getVehiculos().remove(veh);
+		return veh;
 	}
 
-	@Override
 	public Vehiculo vehiculo(String matricula) {
-		// TODO
-		return null;
+		return buscaVehiculo(matricula);
 	}	
 }
 

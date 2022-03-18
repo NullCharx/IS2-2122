@@ -1,6 +1,12 @@
+package ImpuestoCirculacionDAO;
+
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
+
+import ImpuestoCirculacionCommon.Contribuyente;
+import ImpuestoCirculacionCommon.Vehiculo;
+import ImpuestoCirculacionIDAOs.IVehiculosDAO;
 
 /**
  * Clase que implementa la capa DAO de acceso a vehiculos.
