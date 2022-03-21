@@ -1,7 +1,7 @@
-package ImpuestoCirculacionIntf;
+package es.unican.is2.ImpuestoCirculacionIntf;
 
-import ImpuestoCirculacionCommon.OperacionNoValida;
-import ImpuestoCirculacionCommon.Vehiculo;
+import es.unican.is2.ImpuestoCirculacionCommon.OperacionNoValida;
+import es.unican.is2.ImpuestoCirculacionCommon.Vehiculo;
 
 /**
  * Interfaz de negocio para gestionar vehículos

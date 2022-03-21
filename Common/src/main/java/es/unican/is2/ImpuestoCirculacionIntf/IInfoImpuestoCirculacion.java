@@ -1,7 +1,7 @@
-package ImpuestoCirculacionIntf;
+package es.unican.is2.ImpuestoCirculacionIntf;
 
-import ImpuestoCirculacionCommon.Contribuyente;
-import ImpuestoCirculacionCommon.Vehiculo;
+import es.unican.is2.ImpuestoCirculacionCommon.Contribuyente;
+import es.unican.is2.ImpuestoCirculacionCommon.Vehiculo;
 
 /**
  * Interfaz de negocio para consultar información sobre 

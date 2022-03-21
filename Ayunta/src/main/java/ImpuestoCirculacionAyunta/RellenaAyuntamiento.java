@@ -7,12 +7,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.time.LocalDate;
 
-import ImpuestoCirculacionCommon.Contribuyente;
-import ImpuestoCirculacionCommon.Furgoneta;
-import ImpuestoCirculacionCommon.Motocicleta;
-import ImpuestoCirculacionCommon.Turismo;
-import ImpuestoCirculacionCommon.Vehiculo;
-import ImpuestoCirculacionDAO.Ayuntamiento;
+import es.unican.is2.ImpuestoCirculacionDAO.*;
+import es.unican.is2.ImpuestoCirculacionCommon.*;
 
 public class RellenaAyuntamiento {
 	

@@ -1,4 +1,4 @@
-package ImpuestoCirculacionDAO;
+package es.unican.is2.ImpuestoCirculacionDAO;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import ImpuestoCirculacionCommon.Contribuyente;
+import es.unican.is2.ImpuestoCirculacionCommon.Contribuyente;
 
 
 /**

@@ -3,7 +3,7 @@
   <groupId>es.unican.is2</groupId>
   <artifactId>ImpuestoCirculacionDAO</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>ImpuestoCirculacionDAO</name>
+  <name>es.unican.is2.ImpuestoCirculacionDAO</name>
 
 
   <dependencies>

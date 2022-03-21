@@ -1,4 +1,4 @@
-package ImpuestoCirculacionCommon;
+package es.unican.is2.ImpuestoCirculacionCommon;
 
 import java.io.Serializable;
 import java.time.LocalDate;

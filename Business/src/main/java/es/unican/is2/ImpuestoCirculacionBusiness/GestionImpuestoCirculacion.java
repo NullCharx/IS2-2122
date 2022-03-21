@@ -1,10 +1,10 @@
-package ImpuestoCirculacionBusiness;
+package es.unican.is2.ImpuestoCirculacionBusiness;
 
-import ImpuestoCirculacionCommon.Contribuyente;
-import ImpuestoCirculacionCommon.OperacionNoValida;
-import ImpuestoCirculacionCommon.Vehiculo;
-import ImpuestoCirculacionIDAOs.*;
-import ImpuestoCirculacionIntf.*;
+import es.unican.is2.ImpuestoCirculacionIDAOs.*;
+import es.unican.is2.ImpuestoCirculacionIntf.*;
+import es.unican.is2.ImpuestoCirculacionCommon.Contribuyente;
+import es.unican.is2.ImpuestoCirculacionCommon.OperacionNoValida;
+import es.unican.is2.ImpuestoCirculacionCommon.Vehiculo;
 
 /**
  * Clase que implementa la capa de negocio de la aplicacion

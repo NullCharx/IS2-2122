@@ -1,8 +1,8 @@
-package ImpuestoCirculacionIDAOs;
+package es.unican.is2.ImpuestoCirculacionIDAOs;
 
 import java.util.List;
 
-import ImpuestoCirculacionCommon.Contribuyente;
+import es.unican.is2.ImpuestoCirculacionCommon.Contribuyente;
 
 /**
  * Interfaz DAO para contribuyentes

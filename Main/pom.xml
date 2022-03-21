@@ -67,8 +67,7 @@
     		<configuration>
         		<archive>
             		<manifest>
-               		 <mainClass>
-                  		  es.unican.is2.ImpuestoCirculacionMain.Runner
+               		 <mainClass>es.unican.is2.ImpuestoCirculacionMain.Runner
               		  </mainClass>
          		   </manifest>
       		  </archive>
