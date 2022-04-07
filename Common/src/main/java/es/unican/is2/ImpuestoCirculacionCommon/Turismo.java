@@ -10,9 +10,12 @@ public class Turismo
 
 	private double potencia;
 	
-	public Turismo(String matricula, LocalDate fecha, double potencia) {
-		super(matricula, fecha);
-		this.potencia = potencia;
+	public Turismo(String matricula, LocalDate fecha, double potencia) throws DatoInvalido, NullPointerException {
+	    super(matricula, fecha);
+	    if (potencia <= 0) {
+	    	throw new DatoInvalido("Potencia menor o igual que 0");
+	    }
+	    this.potencia = potencia;
 	}
 
 
@@ -37,13 +40,13 @@ public class Turismo
 		} else if (potencia < 8.00) {
 			precio = 25.24;
 			System.out.println("Menos de 8 CF, el precio a pagar es de: "+ precio);
-		} else if (8.0 <= potencia && potencia < 12.0) {
+		} else if (potencia < 12.0) {
 			precio = 68.16;
 			System.out.println("Entre 8 y 11.99 CF, el precio a pagar es de: "+ precio);
-		} else if (12.0 <= potencia && potencia < 16.0) {
+		} else if (potencia < 16.0) {
 			precio = 143.88;
 			System.out.println("Entre 12 y 15.99 CF, el precio a pagar es de: "+ precio);
-		} else if (16.0 <= potencia && potencia < 19.99) {
+		} else if (potencia < 20) {
 			precio = 179.22;
 			System.out.println("Entre 16 y 19.99 CF, el precio a pagar es de: "+ precio);
 		} else {

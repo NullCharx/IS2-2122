@@ -13,6 +13,8 @@ import javax.swing.JList;
 
 import javax.swing.border.LineBorder;
 
+import org.fest.util.Strings;
+
 import es.unican.is2.ImpuestoCirculacionIntf.*;
 import es.unican.is2.ImpuestoCirculacionCommon.Contribuyente;
 import es.unican.is2.ImpuestoCirculacionCommon.Vehiculo;
@@ -75,6 +77,7 @@ public class VistaFuncionario extends JFrame {
 		contentPane.add(listMatriculasVehiculos);
 		listMatriculasVehiculos.setBorder(new LineBorder(new Color(0, 0, 0)));
 		listMatriculasVehiculos.setModel(listModel);
+		listMatriculasVehiculos.setName("txtLista");
 
 		JLabel lblVehiculos = new JLabel("Vehiculos");
 		lblVehiculos.setBounds(149, 93, 65, 14);
@@ -121,9 +124,9 @@ public class VistaFuncionario extends JFrame {
 		Contribuyente c = info.contribuyente(dni);
 		if (c != null) {
 			txtNombreContribuyente.setText(c.getNombre() + " " + c.getApellido1() + " " + c.getApellido2());
-			txtTotalContribuyente.setText(c.getNombre());
+			txtTotalContribuyente.setText(String.valueOf(c.totalAPagar()));
 			listModel.removeAllElements();
-			for (int i = 0; i < c.getVehiculos().size() - 1; i++) {
+			for (int i = 0; i < c.getVehiculos().size(); i++) {
 				Vehiculo v = c.getVehiculos().get(i);
 				listModel.addElement(v.getMatricula());
 			}
