@@ -1,0 +1,11 @@
+es\unican\is2\ImpuestoCirculacionCommon\Turismo.class
+es\unican\is2\ImpuestoCirculacionCommon\Contribuyente.class
+es\unican\is2\ImpuestoCirculacionCommon\Vehiculo.class
+es\unican\is2\ImpuestoCirculacionIntf\IGestionVehiculos.class
+es\unican\is2\ImpuestoCirculacionCommon\OperacionNoValida.class
+es\unican\is2\ImpuestoCirculacionCommon\Motocicleta.class
+es\unican\is2\ImpuestoCirculacionIntf\IGestionContribuyentes.class
+es\unican\is2\ImpuestoCirculacionIDAOs\IVehiculosDAO.class
+es\unican\is2\ImpuestoCirculacionIntf\IInfoImpuestoCirculacion.class
+es\unican\is2\ImpuestoCirculacionIDAOs\IContribuyentesDAO.class
+es\unican\is2\ImpuestoCirculacionCommon\Furgoneta.class
