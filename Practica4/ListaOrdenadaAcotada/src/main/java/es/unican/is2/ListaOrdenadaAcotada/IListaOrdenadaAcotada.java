@@ -1,10 +1,10 @@
 package es.unican.is2.ListaOrdenadaAcotada;
 /**
- * Interfaz correspondiente a una lista ordenada 
+ * Interfaz correspondiente a una lista ordenada
  * con capacidad limitada
  */
 public interface IListaOrdenadaAcotada<E> {
-	
+
 	/**
 	 * Retorna el elemento que ocupa la posicion indicada
 	 * @param indice
@@ -17,7 +17,7 @@ public interface IListaOrdenadaAcotada<E> {
      * Inserta un elemento en la posicion que le corresponde
      * de acuerdo a su orden natural
      * @param elemento a insertar
-     * @throws Lanza IllegalStateException si el elemento no cabe
+     * @throws - IllegalStateException si el elemento no cabe
      */
     public void add(E elemento);
     
