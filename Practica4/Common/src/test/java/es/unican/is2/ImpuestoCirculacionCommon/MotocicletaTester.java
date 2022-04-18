@@ -1,4 +1,4 @@
-package es.unican.is2.ImpuestoCirculacionCommon.test;
+package es.unican.is2.ImpuestoCirculacionCommon;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;

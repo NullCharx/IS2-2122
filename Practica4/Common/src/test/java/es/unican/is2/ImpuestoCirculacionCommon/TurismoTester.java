@@ -1,4 +1,4 @@
-package es.unican.is2.ImpuestoCirculacionCommon.test;
+package es.unican.is2.ImpuestoCirculacionCommon;
 
 import es.unican.is2.ImpuestoCirculacionCommon.Turismo;
 
