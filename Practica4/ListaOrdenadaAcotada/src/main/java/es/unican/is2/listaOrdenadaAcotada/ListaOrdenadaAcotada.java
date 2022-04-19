@@ -45,7 +45,7 @@ public class ListaOrdenadaAcotada<E extends Comparable<E>> implements IListaOrde
 				indice++;
 			}
 		}
-		// desplaza elementos hacia adelante
+		// desplaza elementos hacia adelante (Arreglado)
 		for (int i = ultimo; i >= indice; i--) {
 			lista[i + 1] = lista[i];
 		}
