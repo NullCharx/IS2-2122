@@ -53,7 +53,7 @@ public class VistaFuncionarioTester {
 		demo.list("txtLista").requireItemCount(2);
 		assertTrue(demo.list("txtLista").valueAt(0).equals("2222-AAA"));
 		assertTrue(demo.list("txtLista").valueAt(1).equals("2222-BBB"));
-		demo.textBox("txtTotalContribuyente").requireText("0.0");
+		demo.textBox("txtTotalContribuyente").requireText("8.84");
 		
 		demo.textBox("txtDniContribuyente").deleteText();
 		
