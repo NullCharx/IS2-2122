@@ -5,8 +5,219 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="093265ed-bfce-4fcd-836b-faf1f9904f4a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../GUI/src/test/java/es/unican/is2/ImpuestoCirculacionGUI/VistaFuncionarioTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/src/test/java/es/unican/is2/ImpuestoCirculacionGUI/VistaFuncionarioTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ListaOrdenadaAcotada/src/main/java/es/unican/is2/listaOrdenadaAcotada/ListaOrdenadaAcotada.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/src/main/java/es/unican/is2/listaOrdenadaAcotada/ListaOrdenadaAcotada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Main/target/classes/es/unican/is2/ImpuestoCirculacionMain/Runner.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Business/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Business/.idea/Business.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Business/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Business/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Business/.idea/libraries/Maven__es_unican_is2_ImpuestoCirculacionCommon_0_0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Business/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Business/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Business/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Business/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/es/unican/is2/ImpuestoCirculacionCommon/FurgonetaTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/es/unican/is2/ImpuestoCirculacionCommon/MotocicletaTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/es/unican/is2/ImpuestoCirculacionCommon/TurismoTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DAO/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GUI/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GUI/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GUI/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GUI/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GUI/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GUI/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GUI/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GUI/src/test/java/es/unican/is2/ImpuestoCirculacionGUI/VistaFuncionarioTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.idea/ListaOrdenadaAcotada.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.idea/libraries/Maven__es_unican_is2_ListaOrdenadaAcotadaJar_0_0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/ListaOrdenadaAcotada-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/src/main/java/es/unican/is2/listaOrdenadaAcotada/IListaOrdenadaAcotada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/src/main/java/es/unican/is2/listaOrdenadaAcotada/ListaOrdenadaAcotada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/src/test/java/es/unican/is2/listaOrdenadaAcotada/ListaOrdenadaAcotadaJarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/src/test/java/es/unican/is2/listaOrdenadaAcotada/ListaOrdenadaAcotadaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Main/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Main/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Main/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Main/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ayunta/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ayunta/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ayunta/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ayunta/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ayunta/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ayunta/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ayunta/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ayunta/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ayunta/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ayunta/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ayunta/src/main/java/ImpuestoCirculacionAyunta/RellenaAyuntamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ayunta/src/main/java/ImpuestoCirculacionAyunta/RellenaAyuntamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ayuntamiento.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ayuntamiento.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Business/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Business/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Business/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Business/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Business/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Business/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Business/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Business/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Business/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Business/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Business/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Business/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Business/src/main/java/es/unican/is2/ImpuestoCirculacionBusiness/GestionImpuestoCirculacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Business/src/main/java/es/unican/is2/ImpuestoCirculacionBusiness/GestionImpuestoCirculacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Contribuyente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Contribuyente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Furgoneta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Furgoneta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Motocicleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Motocicleta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/OperacionNoValida.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/OperacionNoValida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Turismo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Turismo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionIDAOs/IContribuyentesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionIDAOs/IContribuyentesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionIDAOs/IVehiculosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionIDAOs/IVehiculosDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IGestionContribuyentes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IGestionContribuyentes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IGestionVehiculos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IGestionVehiculos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IInfoImpuestoCirculacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Common/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IInfoImpuestoCirculacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DAO/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../DAO/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DAO/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../DAO/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DAO/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../DAO/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DAO/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../DAO/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DAO/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DAO/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/Ayuntamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/Ayuntamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/ContribuyentesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/ContribuyentesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/VehiculosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/VehiculosDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GUI/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../GUI/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GUI/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../GUI/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GUI/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../GUI/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GUI/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../GUI/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GUI/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../GUI/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GUI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../GUI/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GUI/src/main/java/es/unican/is2/ImpuestoCirculacionGUI/VistaFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../GUI/src/main/java/es/unican/is2/ImpuestoCirculacionGUI/VistaFuncionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Main/src/main/java/es/unican/is2/ImpuestoCirculacionMain/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main/src/main/java/es/unican/is2/ImpuestoCirculacionMain/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Ayunta/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Ayunta/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Ayunta/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Ayunta/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Ayunta/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Ayunta/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Ayunta/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Ayunta/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Ayunta/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Ayunta/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Ayunta/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Ayunta/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Ayunta/src/main/java/ImpuestoCirculacionAyunta/RellenaAyuntamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Ayunta/src/main/java/ImpuestoCirculacionAyunta/RellenaAyuntamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Ayuntamiento.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Ayuntamiento.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Business/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Business/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Business/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Business/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Business/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Business/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Business/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Business/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Business/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Business/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Business/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Business/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Business/src/main/java/es/unican/is2/ImpuestoCirculacionBusiness/GestionImpuestoCirculacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Business/src/main/java/es/unican/is2/ImpuestoCirculacionBusiness/GestionImpuestoCirculacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Contribuyente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Contribuyente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Furgoneta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Furgoneta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Motocicleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Motocicleta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/OperacionNoValida.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/OperacionNoValida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Turismo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Turismo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionIDAOs/IContribuyentesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionIDAOs/IContribuyentesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionIDAOs/IVehiculosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionIDAOs/IVehiculosDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IGestionContribuyentes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IGestionContribuyentes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IGestionVehiculos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IGestionVehiculos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IInfoImpuestoCirculacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Common/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IInfoImpuestoCirculacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/DAO/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/DAO/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/DAO/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/DAO/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/DAO/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/DAO/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/DAO/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/DAO/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/DAO/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/DAO/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/DAO/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/DAO/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/Ayuntamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/Ayuntamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/ContribuyentesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/ContribuyentesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/VehiculosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/VehiculosDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/GUI/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/GUI/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/GUI/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/GUI/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/GUI/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/GUI/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/GUI/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/GUI/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/GUI/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/GUI/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/GUI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/GUI/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/GUI/src/main/java/es/unican/is2/ImpuestoCirculacionGUI/VistaFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/GUI/src/main/java/es/unican/is2/ImpuestoCirculacionGUI/VistaFuncionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Main/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Main/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Main/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Main/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Main/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Main/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Main/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Main/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Main/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Main/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Main/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Practica2/Main/src/main/java/es/unican/is2/ImpuestoCirculacionMain/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practica2/Main/src/main/java/es/unican/is2/ImpuestoCirculacionMain/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ayunta/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../Ayunta/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ayunta/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Ayunta/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ayunta/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../Ayunta/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ayunta/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Ayunta/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ayunta/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Ayunta/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ayunta/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ayunta/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ayunta/src/main/java/ImpuestoCirculacionAyunta/RellenaAyuntamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ayunta/src/main/java/ImpuestoCirculacionAyunta/RellenaAyuntamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ayuntamiento.out" beforeDir="false" afterPath="$PROJECT_DIR$/../Ayuntamiento.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Business/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../Business/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Business/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Business/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Business/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../Business/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Business/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Business/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Business/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Business/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Business/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Business/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Business/src/main/java/es/unican/is2/ImpuestoCirculacionBusiness/GestionImpuestoCirculacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Business/src/main/java/es/unican/is2/ImpuestoCirculacionBusiness/GestionImpuestoCirculacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Contribuyente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Contribuyente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Furgoneta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Furgoneta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Motocicleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Motocicleta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/OperacionNoValida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/OperacionNoValida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Turismo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Turismo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionCommon/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionIDAOs/IContribuyentesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionIDAOs/IContribuyentesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionIDAOs/IVehiculosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionIDAOs/IVehiculosDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IGestionContribuyentes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IGestionContribuyentes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IGestionVehiculos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IGestionVehiculos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IInfoImpuestoCirculacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/unican/is2/ImpuestoCirculacionIntf/IInfoImpuestoCirculacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAO/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../DAO/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAO/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../DAO/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAO/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../DAO/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAO/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../DAO/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAO/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DAO/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/Ayuntamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/Ayuntamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/ContribuyentesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/ContribuyentesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/VehiculosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DAO/src/main/java/es/unican/is2/ImpuestoCirculacionDAO/VehiculosDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/src/main/java/es/unican/is2/ImpuestoCirculacionGUI/VistaFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GUI/src/main/java/es/unican/is2/ImpuestoCirculacionGUI/VistaFuncionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../ListaOrdenadaAcotada/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../Main/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Main/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/src/main/java/es/unican/is2/ImpuestoCirculacionMain/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Main/src/main/java/es/unican/is2/ImpuestoCirculacionMain/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +249,7 @@
       <updated>1650310258055</updated>
       <workItem from="1650310259462" duration="1052000" />
       <workItem from="1650395010694" duration="50000" />
+      <workItem from="1650396531234" duration="321000" />
     </task>
     <servers />
   </component>
