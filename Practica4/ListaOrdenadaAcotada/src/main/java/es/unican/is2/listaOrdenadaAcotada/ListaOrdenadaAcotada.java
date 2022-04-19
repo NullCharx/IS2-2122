@@ -46,7 +46,7 @@ public class ListaOrdenadaAcotada<E extends Comparable<E>> implements IListaOrde
 			}
 		}
 		// desplaza elementos hacia adelante
-		for (int i = ultimo; i > indice; i--) {
+		for (int i = ultimo; i >= indice; i--) {
 			lista[i + 1] = lista[i];
 		}
 		// inserta el elemento
@@ -54,6 +54,7 @@ public class ListaOrdenadaAcotada<E extends Comparable<E>> implements IListaOrde
 		ultimo++;
 
 	}
+
 
 	public E remove(int indice) {
 		//Comruebo si exite un elemento a borrar (lista vacia.) implementacion corregida
