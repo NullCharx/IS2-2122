@@ -15,12 +15,19 @@ import fundamentos.Mensaje;
 /**
  * Gestión de las comisiones de vendedores de una tienda
  */
+
+/**
+ * 
+ * Weighted Method For Class: (WMC) 15
+ * Weighted Method For Class: normalzied (WMCn): 15/3 =  5
+ *
+ */
 public class GestionComisiones {
 
 	/**
 	 * Programa principal basado en menu
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) {//Complejidad ciclomatica:1+3+1+1+1+1+1+1 = 10
 		// opciones del menu
 		final int NUEVA_VENTA = 0, VENDEDOR_DEL_MES = 1, VENDEDORES = 2;
 
@@ -33,7 +40,7 @@ public class GestionComisiones {
 		String msj;
 
 		// crea la tienda
-		Tienda tienda = new Tienda("C:\\Temp\\datosTienda.txt");
+		Tienda tienda = new Tienda("C:\\Users\\carlo\\Documents\\3carrera\\Ingenieria de Software II\\practicas\\ProyectoGIT\\IS2-2122\\Practica5\\datosTienda.txt");
 
 		// crea la ventana de menu
 		Menu menu = new Menu("Comisiones tienda");
@@ -43,11 +50,11 @@ public class GestionComisiones {
 		int opcion;
 
 		// lazo de espera de comandos del usuario
-		while (true) {
+		while (true) {//CC 1
 			opcion = menu.leeOpcion();
 
 			// realiza las acciones dependiendo de la opcion elegida
-			switch (opcion) {
+			switch (opcion) {//CC 1 + 1 + 1 = 3
 			case NUEVA_VENTA:
 				lect = new Lectura("Datos Venta");
 				lect.creaEntrada("Id Vendedor", "");
@@ -56,7 +63,7 @@ public class GestionComisiones {
 				dni = lect.leeString("Id Vendedor");
 				double importe = lect.leeDouble("Importe");
 				try {
-					if (!tienda.anhadeVenta(dni, importe)) {
+					if (!tienda.anhadeVenta(dni, importe)) {//CC 1
 						mensaje("ERROR", "El vendedor no existe");
 					}
 				} catch (IOException e) {
@@ -69,36 +76,36 @@ public class GestionComisiones {
 				vendedores = tienda.vendedores();
 				resultado = new LinkedList<Vendedor>();
 				double maxVentas = 0.0;
-				for (Vendedor v : vendedores) {
-					if (v.getTotalVentas() > maxVentas) {
+				for (Vendedor v : vendedores) {//CC 1
+					if (v.getTotalVentas() > maxVentas) {//CC 1 {
 						maxVentas = v.getTotalVentas();
 						resultado.clear();
 						resultado.add(v);
-					} else if (v.getTotalVentas() == maxVentas) {
+					} else if (v.getTotalVentas() == maxVentas) {//CC 1
 						resultado.add(v);
 					}
 				}
 
 				msj = "";
-				for (Vendedor vn : resultado) {
+				for (Vendedor vn : resultado) {//CC 1
 					msj += vn.getNombre() + "\n";
 				}
 				mensaje("VENDEDORES DEL MES", msj);
 				break;
 
 			
-		case VENDEDORES:
-
-			vendedores = tienda.vendedores();
-			System.out.println(vendedores.size());
-			Collections.sort(vendedores, new ComparadorVendedorVentas());			
-			msj = "";
-			for (Vendedor vn : vendedores) {
-				msj += vn.getNombre() + " " + vn.getTotalVentas() + "\n";
+			case VENDEDORES:
+	
+				vendedores = tienda.vendedores();
+				System.out.println(vendedores.size());
+				Collections.sort(vendedores, new ComparadorVendedorVentas());			
+				msj = "";
+				for (Vendedor vn : vendedores) {//C 1
+					msj += vn.getNombre() + " " + vn.getTotalVentas() + "\n";
+				}
+				mensaje("VENDEDORES", msj);
+				break;
 			}
-			mensaje("VENDEDORES", msj);
-			break;
-		}
 		}
 	}
 
@@ -107,18 +114,18 @@ public class GestionComisiones {
 	 * @param titulo Titulo de la ventana
 	 * @param txt Texto contenido en la ventana
 	 */
-	private static void mensaje(String titulo, String txt) {
+	private static void mensaje(String titulo, String txt) {// Complejidad Cicloamtica 0 + 1 = 1
 		Mensaje msj = new Mensaje(titulo);
 		msj.escribe(txt);
 
 	}
 	
-	public static class ComparadorVendedorVentas implements Comparator<Vendedor>  {
+	public static class ComparadorVendedorVentas implements Comparator<Vendedor>  {// Complejidad Cicloamtica 1 + 1 +1 + 1 = 4
 
 		public int compare(Vendedor o1, Vendedor o2) {
-			if (o1.getTotalVentas()>o2.getTotalVentas())
+			if (o1.getTotalVentas()>o2.getTotalVentas())//CC 1
 				return -1;
-			else if (o1.getTotalVentas()<o2.getTotalVentas())
+			else if (o1.getTotalVentas()<o2.getTotalVentas())//CC1
 				return 1;
 			return 0;
 		}
