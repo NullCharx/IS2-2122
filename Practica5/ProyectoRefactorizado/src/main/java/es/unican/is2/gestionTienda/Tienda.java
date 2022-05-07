@@ -17,13 +17,16 @@ import java.util.Scanner;
  * que se pasa como parámetro al crear la tienda
  */
 
-/**
- * 
- * Weighted Method For Class: (WMC) 37
- * Weighted Method For Class (normalzied): 37/9 = 4,2 (approx)
- *
- */
+//WMC: 35
+//WMCn: 37/11 = 3,18 (approx)
+//AFF: 1 (GestionComisiones)
+//EFF: 2  (Vendedor, tipoVendedor)
+//CBO (AFF U EFF): 3
+//DIT: 0
+//NOC: 0
+//CCog: 30
 public class Tienda {
+
 
 	private LinkedList<Vendedor> lista = new LinkedList<Vendedor>();
 	private String direccion;
@@ -36,7 +39,9 @@ public class Tienda {
 	 * 
 	 * @param datos Path absoluto del fichero de datos
 	 */
-	public Tienda(String datos) { //Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad cognitiva: 0
+	public Tienda(String datos) { 
 		this.datos = datos;
 	}
 
@@ -44,7 +49,9 @@ public class Tienda {
 	 * Retorna la dirección de la tienda
 	 * @return Dirección de la tienda
 	 */
-	public String direccion() { //Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad cognitiva: 0
+	public String direccion() { 
 		return direccion;
 	}
 
@@ -52,7 +59,9 @@ public class Tienda {
 	 * Retorna el nombre de la tienda
 	 * @return Nombre de la tienda
 	 */
-	public String nombre() { //Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad cognitiva: 0
+	public String nombre() { 
 		return nombre;
 	}
 
@@ -63,9 +72,11 @@ public class Tienda {
 	 * @return true si el vendedor se ha anhadido 
 	 *         false si ya había un vendedor con el mismo id
 	 */
-	public boolean anhade(Vendedor nuevoVendedor) throws IOException { //Complejidad ciclomatica: 1 + 1 = 2
+	//Complejidad ciclomatica: 1 + 1 = 2
+	//Complejidad cognitiva: 1 
+	public boolean anhadeVendedor(Vendedor nuevoVendedor) throws IOException { //Nombre metodo refactorizado desde "anhade"
 		Vendedor v = buscaVendedor(nuevoVendedor.getId());
-		if (v != null) {//CC 1
+		if (v != null) {//CC 1, CCog 1
 			return false;
 		}
 		lista.add(nuevoVendedor);
@@ -80,9 +91,11 @@ public class Tienda {
 	 * @return true si se elimina el vendedor 
 	 *         false si no existe ningún vendedor con el id indicado
 	 */
-	public boolean eliminaVendedor(String id) throws IOException {//Complejidad ciclomatica: 1 + 1 = 2
+	//Complejidad ciclomatica: 1 + 1 = 2
+	//Complejidad cognitiva: 1
+	public boolean eliminaVendedor(String id) throws IOException {
 		Vendedor v = buscaVendedor(id);
-		if (v == null) {//CC1
+		if (v == null) {//CC1, CCOg 1
 			return false;
 		}
 		lista.remove(v);
@@ -97,14 +110,16 @@ public class Tienda {
 	 * @return true si se añade la venta 
 	 *         false si no se encuentra el vendedor
 	 */
-	public boolean anhadeVenta(String id, double importe) throws IOException { //Complejidad ciclomatica:2 + 1 + 1 + 1 = 5
+	//Complejidad ciclomatica:2 + 1 + 1 + 1 = 5
+	//Complejidad cognitiva: 1 + 1 + 2 = 4
+	public boolean anhadeVenta(String id, double importe) throws IOException { 
 		Vendedor v = buscaVendedor(id);
-		if (v == null) {//CC 1
+		if (v == null) {//CC 1, CCog 1
 			return false;
 		}
 		double importeFinal = importe;
-		if (v instanceof VendedorEnPlantilla) {//CC 1
-			switch (((VendedorEnPlantilla) v).tipo()) { //CC 2
+		if (v instanceof VendedorEnPlantilla) {//CC 1 CCog 
+			switch (((VendedorEnPlantilla) v).tipo()) { //CC 2, CCog 1 + 1 (Anidación de nivel 1)
 			case JUNIOR:
 				importeFinal += importeFinal * 0.005;
 				break;
@@ -113,7 +128,7 @@ public class Tienda {
 				break;
 			}
 		}
-		v.anhade(importeFinal);
+		v.anhadeVentaVendedor(importeFinal);
 		vuelcaDatos();
 		return true;
 	}
@@ -124,11 +139,13 @@ public class Tienda {
 	 * @param id Id del vendedor
 	 * @return vendedor con ese id o null si no existe ninguno
 	 */
-	public Vendedor buscaVendedor(String id) {//Complejidad ciclomatica: 2 + 2 + 1 + 1 + 1 + 1 +1 = 9
+	//Complejidad ciclomatica: 2 + 1+1+1 = 5
+	//Complejidad cognitiva: 5
+	public Vendedor buscaVendedor(String id) {
 
 		lista = new LinkedList<Vendedor>();
 		Scanner in = null;
-		try {
+		try {//CCog 1 (catch) + 1 (finally)
 			// abre el fichero
 			in = new Scanner(new FileReader(datos));
 			// configura el formato de números
@@ -136,55 +153,16 @@ public class Tienda {
 			nombre = in.nextLine();
 			direccion = in.nextLine();
 			in.next();
-			Vendedor ven = null;
-			// lee los vendedores senior
-			while (in.hasNext() && !in.next().equals("Junior")) { //CC 2 
-				String nombre = in.next();
-				in.next();
-				String idIn = in.next();
-				in.next();
-				String dni= in.next();
-				in.next();
-				double totalVentas = in.nextDouble();
-				ven = new VendedorEnPlantilla(nombre, idIn, dni, TipoVendedor.SENIOR);
-				ven.setT(totalVentas);
-				lista.add(ven);
-			}
-			// lee los vendedores junior
-			while (in.hasNext() && !in.next().equals("Prácticas")) { //CC 2
-				String nombre = in.next();
-				in.next();
-				String idIn = in.next();
-				in.next();
-				String dni= in.next();
-				in.next();
-				double totalVentas = in.nextDouble();
-				ven = new VendedorEnPlantilla(nombre, idIn, dni, TipoVendedor.JUNIOR);
-				ven.setT(totalVentas);
-				lista.add(ven);
-			}
-			while (in.hasNext()) { //CC 1
-				in.next();
-				String nombre = in.next();
-				in.next();
-				String idIn = in.next();
-				in.next();
-				String dni= in.next();
-				in.next();
-				double totalVentas = in.nextDouble();
-				ven = new vendedorEnPracticas(nombre, idIn, dni);
-				ven.setT(totalVentas);
-				lista.add(ven);
-			}
+			leerVendedores(in);
 		} catch (FileNotFoundException e) {
 		} finally {
-			if (in != null) {//CC 1
+			if (in != null) {//CC 1, Ccog 1
 				in.close();
 			}
 		} // try
 
-		for (Vendedor v : lista) {// CC 1
-			if (v.getId().equals(id)) { //CC 1
+		for (Vendedor v : lista) {// CC 1, Ccog 1
+			if (v.getId().equals(id)) { //CC 1, CCog 1
 				return v;
 			}
 		}
@@ -195,11 +173,13 @@ public class Tienda {
 	 * Retorna la lista de vendedores actuales de la tienda 
 	 * @return La lista de vendedores
 	 */
-	public List<Vendedor> vendedores() {//Complejidad ciclomatica: 2 + 2 + 1 + 1 +1 = 7
+	//Complejidad ciclomatica: 1 + 1 = 2
+	//Complejidad cognitiva: 3
+	public List<Vendedor> vendedores() {
 		lista = new LinkedList<Vendedor>();
 
 		Scanner in = null;
-		try {
+		try {//CCog 1 (catch) + 1 (finally)
 			// abre el fichero
 			in = new Scanner(new FileReader(datos));
 			// configura el formato de números
@@ -207,51 +187,12 @@ public class Tienda {
 			nombre = in.nextLine();
 			direccion = in.nextLine();
 			in.next();
-			Vendedor ven = null;
-			// lee los vendedores senior
-			while (in.hasNext() && !in.next().equals("Junior")) { //CC 2
-
-				String nombre = in.next();
-				in.next();
-				String idIn = in.next();
-				in.next();
-				String dni= in.next();
-				in.next();
-				double totalVentas = in.nextDouble();
-				ven = new VendedorEnPlantilla(nombre, idIn, dni, TipoVendedor.SENIOR);
-				ven.setT(totalVentas);
-				lista.add(ven);
-			}
-			// lee los vendedores junior
-			while (in.hasNext() && !in.next().equals("Prácticas")) { //CC 2
-				String nombre = in.next();
-				in.next();
-				String idIn = in.next();
-				in.next();
-				String dni= in.next();
-				in.next();
-				double totalVentas = in.nextDouble();
-				ven = new VendedorEnPlantilla(nombre, idIn, dni, TipoVendedor.JUNIOR);
-				ven.setT(totalVentas);
-				lista.add(ven);
-			}
-			while (in.hasNext()) { //CC 1
-				in.next();
-				String nombre = in.next();
-				in.next();
-				String idIn = in.next();
-				in.next();
-				String dni= in.next();
-				in.next();
-				double totalVentas = in.nextDouble();
-				ven = new vendedorEnPracticas(nombre, idIn, dni);
-				ven.setT(totalVentas);
-				lista.add(ven);
-			}
+			// lee los vendedores
+			leerVendedores(in);
 		} catch (FileNotFoundException e) {
 
 		} finally {
-			if (in != null) {//CC 1
+			if (in != null) {//CC 1 Ccog 1
 				in.close();
 			}
 		} // try
@@ -260,29 +201,66 @@ public class Tienda {
 
 	}
 
+	//Complejidad ciclomatica: 2 + 1 + 1 + 1 +1 = 6
+	//Complejidad cognitiva: 3
+	private void leerVendedores(Scanner in) {
+		Vendedor ven;
+		while (in.hasNext() && !in.next().equals("Junior")) { //CC 2, Ccog 1
+
+			String nombre = in.next();
+			in.next();
+			String idIn = in.next();
+			in.next();
+			String dni= in.next();
+			in.next();
+			double totalVentas = in.nextDouble();
+			ven = new VendedorEnPlantilla(nombre, idIn, dni, TipoVendedor.SENIOR);
+			ven.setVentasVendedor(totalVentas);
+			lista.add(ven);
+		}
+		// lee los vendedores junior
+		while (in.hasNext() && !in.next().equals("Prácticas")) { //CC 2 Ccog 1
+			String nombre = in.next();
+			in.next();
+			String idIn = in.next();
+			in.next();
+			String dni= in.next();
+			in.next();
+			double totalVentas = in.nextDouble();
+			ven = new VendedorEnPlantilla(nombre, idIn, dni, TipoVendedor.JUNIOR);
+			ven.setVentasVendedor(totalVentas);
+			lista.add(ven);
+		}
+		while (in.hasNext()) { //CC 1 Ccog 1
+			in.next();
+			String nombre = in.next();
+			in.next();
+			String idIn = in.next();
+			in.next();
+			String dni= in.next();
+			in.next();
+			double totalVentas = in.nextDouble();
+			ven = new vendedorEnPracticas(nombre, idIn, dni);
+			ven.setVentasVendedor(totalVentas);
+			lista.add(ven);
+		}
+	}
+
 	/**
 	 * Método que actualiza el fichero datosTienda.txt 
 	 * con los datos actualizados de los vendedores
 	 */
-	private void vuelcaDatos() throws IOException { //Complejidad ciclomatica: 1+1+1+1+1+1+1+1+1=9
+	//Complejidad ciclomatica: 1+1+1+1+1= 5
+	//Complejidad cognitiva: 5
+	private void vuelcaDatos() throws IOException { 
 		PrintWriter out = null;
 		List<Vendedor> senior = new LinkedList<Vendedor>();
 		List<Vendedor> junior = new LinkedList<Vendedor>();
 		List<Vendedor> practicas = new LinkedList<Vendedor>();
 
-		for (Vendedor v : lista) {//CC 1
-			if (v instanceof vendedorEnPracticas) {//CC 1
-				practicas.add(v);
-			} else if (v instanceof VendedorEnPlantilla) {//CC 1
-				VendedorEnPlantilla vp = (VendedorEnPlantilla) v;
-				if (vp.tipo().equals(TipoVendedor.JUNIOR)) //CC 1
-					junior.add(vp);
-				else
-					senior.add(vp);
-			}
-		}
+		clasificaVendedores(senior, junior, practicas);//Refactorizacion metodo
 
-		try {
+		try { //Ccog 1 (finally)
 
 			out = new PrintWriter(new FileWriter(datos));
 
@@ -290,29 +268,45 @@ public class Tienda {
 			out.println(direccion);
 			out.println();
 			out.println("Senior");
-			for (Vendedor v : senior) {//CC 1
+			for (Vendedor v : senior) {//CC 1 Ccog 1
 				VendedorEnPlantilla v1 = (VendedorEnPlantilla) v;
 				out.println("  Nombre: " + v1.getNombre() + " Id: " + v1.getId() + " DNI: "+ v1.getDni()+" TotalVentasMes: "
 						+ v1.getTotalVentas());
 			}
 			out.println();
 			out.println("Junior");
-			for (Vendedor v : junior) {//CC 1
+			for (Vendedor v : junior) {//CC 1 Ccog 1
 				VendedorEnPlantilla v2 = (VendedorEnPlantilla) v;
 				out.println("  Nombre: " + v2.getNombre() + " Id: " + v2.getId() + " DNI: "+ v2.getDni()+" TotalVentasMes: "
 						+ v2.getTotalVentas());
 			}
 			out.println();
 			out.println("Prácticas");
-			for (Vendedor v : practicas) {//CC 1
+			for (Vendedor v : practicas) {//CC 1 Ccog 1
 				vendedorEnPracticas v3 = (vendedorEnPracticas) v;
 				out.println("  Nombre: " + v3.getNombre() + " Id: " + v3.getId() + " DNI: "+ v3.getDni()+" TotalVentasMes: "
 						+ v3.getTotalVentas());
 			}
 
 		} finally {
-			if (out != null)//CC 1
+			if (out != null)//CC 1 Ccog 1
 				out.close();
+		}
+	}
+
+	//Complejidad ciclomatica: 1 + 1 + 1 + 1 +1   = 5
+	//Complejidad cognitiva: 8
+	private void clasificaVendedores(List<Vendedor> senior, List<Vendedor> junior, List<Vendedor> practicas) {
+		for (Vendedor v : lista) {//CC 1 Ccog 1
+			if (v instanceof vendedorEnPracticas) {//CC 1 Ccog 1 + 1 (primer nivel de anidacion
+				practicas.add(v);
+			} else if (v instanceof VendedorEnPlantilla) {//CC 1 Ccog 1
+				VendedorEnPlantilla vp = (VendedorEnPlantilla) v;
+				if (vp.tipo().equals(TipoVendedor.JUNIOR)) //CC 1 Ccog 1 + 2 (segundo nivel de anidacion)
+					junior.add(vp);
+				else //Ccog 1
+					senior.add(vp);
+			}
 		}
 	}
 

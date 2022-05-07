@@ -7,14 +7,16 @@ package es.unican.is2.gestionTienda;
  * y sus datos sobre ventas y comisiones
  */
 
-/**
- * 
- * Weighted Method For Class: (WMC) 6
- * Weighted Method For Class (normalzied): 6/6 =  1
- *
- */
+//WMC: 6
+//WMCn: 6/6 = 1
+//AFF: 2 (Tienda, GestionComisiones)
+//EFF: 0
+//CBO (AFF U EFF): 2
+//DIT: 0
+//NOC: 1
+//CCog: 0
 public abstract class Vendedor {
-	
+
 	private String id;
 	private String nombre;
 	
@@ -22,7 +24,9 @@ public abstract class Vendedor {
 	// Valor total de las ventas mensuales realizadas por el vendedor
 	private double t;
 	
-	public Vendedor(String nombre, String id) {//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad cognitiva: 0
+	public Vendedor(String nombre, String id) {
 		this.nombre = nombre;
 		this.id = id;
 	}
@@ -32,7 +36,9 @@ public abstract class Vendedor {
 	 * Retorna el nombre del vendedor
 	 * @return nombre
 	 */
-	public String getNombre() {//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad cognitiva: 0
+	public String getNombre() {
 		return nombre;
 	}
 	
@@ -40,7 +46,9 @@ public abstract class Vendedor {
 	 * Retorna el dni del vendedor
 	 * @return dni
 	 */
-	public String getId() {//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad cognitiva: 0
+	public String getId() {
 		return id;
 	}
 	
@@ -49,7 +57,9 @@ public abstract class Vendedor {
 	 * Retorna el total de ventas acumuladas por el vendedor
 	 * @return Total de ventas
 	 */
-	public double getTotalVentas() {//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad cognitiva: 0
+	public double getTotalVentas() {
 		return t;
 	}
 	
@@ -58,7 +68,9 @@ public abstract class Vendedor {
 	 * Se utiliza para poder cargar los datos desde fichero
 	 * @param Total de ventas
 	 */
-	public void setT(double totalVentas) {//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad cognitiva: 0
+	public void setT(double totalVentas) {
 		this.t = totalVentas;
 	}
 	
@@ -66,7 +78,9 @@ public abstract class Vendedor {
 	 * Anhade una nueva venta al vendedor, actualizando su comision
 	 * @param importe de la venta
 	 */
-	public void anhade(double importe){//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad cognitiva: 0
+	public void anhade(double importe) {
 		t += importe;
 	}
 	

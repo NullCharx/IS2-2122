@@ -16,18 +16,23 @@ import fundamentos.Mensaje;
  * Gestión de las comisiones de vendedores de una tienda
  */
 
-/**
- * 
- * Weighted Method For Class: (WMC) 15
- * Weighted Method For Class: normalzied (WMCn): 15/3 =  5
- *
- */
+//WMC: 15
+//WMCn: 15/3 = 5
+//AFF: 1 (ComparadorVendedorVentas)
+//EFF: 3 (Vendedor, Tienda, ComparadorVendedorVentas)
+//CBO (AFF U EFF): 0
+//DIT: 0
+//NOC: 0
+//Ccog: 
 public class GestionComisiones {
+
 
 	/**
 	 * Programa principal basado en menu
 	 */
-	public static void main(String[] args) {//Complejidad ciclomatica:1+3+1+1+1+1+1+1 = 10
+	//Complejidad ciclomatica:1+3+1+1+1+1+1+1 = 10
+	//Complejidad cognitiva: 21
+	public static void main(String[] args) {
 		// opciones del menu
 		final int NUEVA_VENTA = 0, VENDEDOR_DEL_MES = 1, VENDEDORES = 2;
 
@@ -50,11 +55,11 @@ public class GestionComisiones {
 		int opcion;
 
 		// lazo de espera de comandos del usuario
-		while (true) {//CC 1
+		while (true) {//CC 1 Ccog 1
 			opcion = menu.leeOpcion();
 
 			// realiza las acciones dependiendo de la opcion elegida
-			switch (opcion) {//CC 1 + 1 + 1 = 3
+			switch (opcion) {//CC 1 + 1 + 1 = 3, Ccog 1 (switch) +  1 (nivel de anidacion 1)
 			case NUEVA_VENTA:
 				lect = new Lectura("Datos Venta");
 				lect.creaEntrada("Id Vendedor", "");
@@ -62,8 +67,8 @@ public class GestionComisiones {
 				lect.esperaYCierra();
 				dni = lect.leeString("Id Vendedor");
 				double importe = lect.leeDouble("Importe");
-				try {
-					if (!tienda.anhadeVenta(dni, importe)) {//CC 1
+				try {//Ccog 1
+					if (!tienda.anhadeVenta(dni, importe)) {//CC 1, Ccog 1 + 2 (Nivel de anidacion 2)
 						mensaje("ERROR", "El vendedor no existe");
 					}
 				} catch (IOException e) {
@@ -76,18 +81,18 @@ public class GestionComisiones {
 				vendedores = tienda.vendedores();
 				resultado = new LinkedList<Vendedor>();
 				double maxVentas = 0.0;
-				for (Vendedor v : vendedores) {//CC 1
-					if (v.getTotalVentas() > maxVentas) {//CC 1 {
+				for (Vendedor v : vendedores) {//CC 1 Ccog 1 + 2 (nivel de anidacion 2)
+					if (v.getTotalVentas() > maxVentas) {//CC 1 Ccog 1 +  3 (Nivel de anidacion 3)
 						maxVentas = v.getTotalVentas();
 						resultado.clear();
 						resultado.add(v);
-					} else if (v.getTotalVentas() == maxVentas) {//CC 1
+					} else if (v.getTotalVentas() == maxVentas) {//CC 1, Ccog 1
 						resultado.add(v);
 					}
 				}
 
 				msj = "";
-				for (Vendedor vn : resultado) {//CC 1
+				for (Vendedor vn : resultado) {//CC 1 Ccog 1 + 2 (Nivel de anidacion 2)
 					msj += vn.getNombre() + "\n";
 				}
 				mensaje("VENDEDORES DEL MES", msj);
@@ -100,7 +105,7 @@ public class GestionComisiones {
 				System.out.println(vendedores.size());
 				Collections.sort(vendedores, new ComparadorVendedorVentas());			
 				msj = "";
-				for (Vendedor vn : vendedores) {//C 1
+				for (Vendedor vn : vendedores) {//C 1, Ccog 1 + 2 (Nivel de anidacion 2)
 					msj += vn.getNombre() + " " + vn.getTotalVentas() + "\n";
 				}
 				mensaje("VENDEDORES", msj);
@@ -114,18 +119,32 @@ public class GestionComisiones {
 	 * @param titulo Titulo de la ventana
 	 * @param txt Texto contenido en la ventana
 	 */
-	private static void mensaje(String titulo, String txt) {// Complejidad Cicloamtica 0 + 1 = 1
+	// Complejidad Cicloamtica 0 + 1 = 1
+	//Complejidad cognitiva: 0
+	private static void mensaje(String titulo, String txt) {
 		Mensaje msj = new Mensaje(titulo);
 		msj.escribe(txt);
 
 	}
 	
-	public static class ComparadorVendedorVentas implements Comparator<Vendedor>  {// Complejidad Cicloamtica 1 + 1 +1 + 1 = 4
+	
 
+	//WMC: 3
+	//WMCn: 3/1 = 3
+	//AFF: 1 (GestionComisiones)
+	//EFF: 1 (Vendedor)
+	//CBO (AFF U EFF): 1
+	//DIT: 0
+	//NOC: 0
+	//Ccog: 2
+	public static class ComparadorVendedorVentas implements Comparator<Vendedor>  {
+
+		// Complejidad Cicloamtica 1 + 1 + 1 = 3
+		//Complejidad cognitiva: 
 		public int compare(Vendedor o1, Vendedor o2) {
-			if (o1.getTotalVentas()>o2.getTotalVentas())//CC 1
+			if (o1.getTotalVentas()>o2.getTotalVentas())//CC 1, Ccog 1
 				return -1;
-			else if (o1.getTotalVentas()<o2.getTotalVentas())//CC1
+			else if (o1.getTotalVentas()<o2.getTotalVentas())//CC1, Ccog 1
 				return 1;
 			return 0;
 		}
