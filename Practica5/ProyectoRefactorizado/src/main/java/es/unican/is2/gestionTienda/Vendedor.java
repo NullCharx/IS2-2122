@@ -7,13 +7,13 @@ package es.unican.is2.gestionTienda;
  * y sus datos sobre ventas y comisiones
  */
 
-//WMC: 6
-//WMCn: 6/6 = 1
+//WMC: 7
+//WMCn: 7/7 = 1
 //AFF: 2 (Tienda, GestionComisiones)
 //EFF: 0
 //CBO (AFF U EFF): 2
 //DIT: 0
-//NOC: 1
+//NOC: 2
 //CCog: 0
 public abstract class Vendedor {
 
@@ -23,12 +23,14 @@ public abstract class Vendedor {
 	
 	// Valor total de las ventas mensuales realizadas por el vendedor
 	private double totalVentasMensuales; //Atribuyo refactorizado de: "t"
+	protected String dni;
 	
 	//Complejidad ciclomatica: 0 + 1 = 1
 	//Complejidad cognitiva: 0
-	public Vendedor(String nombre, String id) {
+	public Vendedor(String nombre, String id, String dni) {
 		this.nombre = nombre;
 		this.id = id;
+		this.dni = dni;
 	}
 	
 
@@ -83,5 +85,12 @@ public abstract class Vendedor {
 	public void anhadeVentaVendedor(double importe) {//Nombre del metodo refactorizado desde "anhade"
 		totalVentasMensuales += importe;
 	}
+
+	//Complejidad ciclomatica: 0 + 1 = 1
+	//Complejidad cognitiva: 0
+	public String getDni() {
+		return dni;
+	}
+
 	
 }

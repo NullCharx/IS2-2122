@@ -66,18 +66,18 @@ public class VendedorEnPlantillaTest {
 	
 	@Test
 	public void testEquals() {
-		VendedorEnPlantilla igualJunior = new VendedorEnPlantilla("Ana", "1", "11111111A", TipoVendedor.JUNIOR);
-		VendedorEnPlantilla distintoIdJunior = new VendedorEnPlantilla("Ana", "2", "11111111A", TipoVendedor.JUNIOR);
-		VendedorEnPlantilla distintoDNIJunior = new VendedorEnPlantilla("Ana", "1", "222222222A", TipoVendedor.JUNIOR);
+		Vendedor igualJunior = new VendedorEnPlantilla("Ana", "1", "11111111A", TipoVendedor.JUNIOR);
+		Vendedor distintoIdJunior = new VendedorEnPlantilla("Ana", "2", "11111111A", TipoVendedor.JUNIOR);
+		Vendedor distintoDNIJunior = new VendedorEnPlantilla("Ana", "1", "222222222A", TipoVendedor.JUNIOR);
 		
 		assertTrue(sutJunior.equals(igualJunior));
 		assertFalse(sutJunior.equals(distintoIdJunior));
 		assertFalse(sutJunior.equals(distintoDNIJunior));
 		
 		
-		VendedorEnPlantilla igualSenior = new VendedorEnPlantilla("Pepe", "2", "222222222A", TipoVendedor.SENIOR);
-		VendedorEnPlantilla distintoIdSenior = new VendedorEnPlantilla("Pepe", "3", "222222222A", TipoVendedor.SENIOR);
-		VendedorEnPlantilla distintoDNISenior = new VendedorEnPlantilla("Pepe", "2", "33333333A", TipoVendedor.SENIOR);
+		Vendedor igualSenior = new VendedorEnPlantilla("Pepe", "2", "222222222A", TipoVendedor.SENIOR);
+		Vendedor distintoIdSenior = new VendedorEnPlantilla("Pepe", "3", "222222222A", TipoVendedor.SENIOR);
+		Vendedor distintoDNISenior = new VendedorEnPlantilla("Pepe", "2", "33333333A", TipoVendedor.SENIOR);
 		
 		assertTrue(sutSenior.equals(igualSenior));
 		assertFalse(sutSenior.equals(distintoIdSenior));

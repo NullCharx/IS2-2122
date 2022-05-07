@@ -1,8 +1,8 @@
 package es.unican.is2.gestionTienda;
 
 
-//WMC: 5
-//WMCn: 5/4 = 1,25
+//WMC: 4
+//WMCn: 4/3 = 1,33
 //AFF: 0
 //EFF: 1 (TipoVendedor)
 //CBO (AFF U EFF): 0s
@@ -12,8 +12,6 @@ package es.unican.is2.gestionTienda;
 public class VendedorEnPlantilla extends Vendedor {
 
 	private TipoVendedor tipoVendedor;//Refactorizado desde "tipo"
-	private String dni;
-	
 	/**
 	 * Retorna un nuevo vendedor en plantilla del tipo que se indica
 	 * @param nombre
@@ -24,9 +22,8 @@ public class VendedorEnPlantilla extends Vendedor {
 	//Complejidad ciclomatica: 0 + 1 = 1
 	//Complejidad cognitiva: 0
 	public VendedorEnPlantilla(String nombre, String id, String dni, TipoVendedor tipo) {
-		super(nombre, id);
+		super(nombre, id, dni);
 		this.tipoVendedor = tipo;
-		this.dni=dni;
 	}
 	
 	//Complejidad ciclomatica: 0 + 1 = 1
@@ -35,19 +32,13 @@ public class VendedorEnPlantilla extends Vendedor {
 		return tipoVendedor;
 	}
 	
-	//Complejidad ciclomatica: 0 + 1 = 1
-	//Complejidad cognitiva: 0
-	public String getDni() {
-		return dni;
-	}
-	
 	//Complejidad ciclomatica: 1 + 1 = 2
 	//Complejidad cognitiva: 1
 	@Override
 	public boolean equals(Object obj) {
 		if (!(obj instanceof VendedorEnPlantilla)) //CC 1, CCog 1
 			return false;
-		VendedorEnPlantilla v = (VendedorEnPlantilla) obj;
+		Vendedor v = (Vendedor) obj;
 		return (v.getId().equals(getId()) && v.getDni().equals(getDni()));
 	}
 }

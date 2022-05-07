@@ -75,8 +75,8 @@ public class Tienda {
 	//Complejidad ciclomatica: 1 + 1 = 2
 	//Complejidad cognitiva: 1 
 	public boolean anhadeVendedor(Vendedor nuevoVendedor) throws IOException { //Nombre metodo refactorizado desde "anhade"
-		Vendedor v = buscaVendedor(nuevoVendedor.getId());
-		if (v != null) {//CC 1, CCog 1
+		Vendedor vendedor = buscaVendedor(nuevoVendedor.getId());
+		if (vendedor != null) {//CC 1, CCog 1
 			return false;
 		}
 		lista.add(nuevoVendedor);
@@ -94,11 +94,11 @@ public class Tienda {
 	//Complejidad ciclomatica: 1 + 1 = 2
 	//Complejidad cognitiva: 1
 	public boolean eliminaVendedor(String id) throws IOException {
-		Vendedor v = buscaVendedor(id);
-		if (v == null) {//CC1, CCOg 1
+		Vendedor vendedor = buscaVendedor(id);
+		if (vendedor == null) {//CC1, CCOg 1
 			return false;
 		}
-		lista.remove(v);
+		lista.remove(vendedor);
 		vuelcaDatos();
 		return true;
 	}
@@ -113,13 +113,13 @@ public class Tienda {
 	//Complejidad ciclomatica:2 + 1 + 1 + 1 = 5
 	//Complejidad cognitiva: 1 + 1 + 2 = 4
 	public boolean anhadeVenta(String id, double importe) throws IOException { 
-		Vendedor v = buscaVendedor(id);
-		if (v == null) {//CC 1, CCog 1
+		Vendedor vendedor = buscaVendedor(id);
+		if (vendedor == null) {//CC 1, CCog 1
 			return false;
 		}
 		double importeFinal = importe;
-		if (v instanceof VendedorEnPlantilla) {//CC 1 CCog 
-			switch (((VendedorEnPlantilla) v).tipo()) { //CC 2, CCog 1 + 1 (Anidación de nivel 1)
+		if (vendedor instanceof VendedorEnPlantilla) {//CC 1 CCog 
+			switch (((VendedorEnPlantilla) vendedor).tipo()) { //CC 2, CCog 1 + 1 (Anidación de nivel 1)
 			case JUNIOR:
 				importeFinal += importeFinal * 0.005;
 				break;
@@ -128,7 +128,7 @@ public class Tienda {
 				break;
 			}
 		}
-		v.anhadeVentaVendedor(importeFinal);
+		vendedor.anhadeVentaVendedor(importeFinal);
 		vuelcaDatos();
 		return true;
 	}
@@ -269,21 +269,21 @@ public class Tienda {
 			out.println();
 			out.println("Senior");
 			for (Vendedor v : senior) {//CC 1 Ccog 1
-				VendedorEnPlantilla v1 = (VendedorEnPlantilla) v;
+				Vendedor v1 = (Vendedor) v;
 				out.println("  Nombre: " + v1.getNombre() + " Id: " + v1.getId() + " DNI: "+ v1.getDni()+" TotalVentasMes: "
 						+ v1.getTotalVentas());
 			}
 			out.println();
 			out.println("Junior");
 			for (Vendedor v : junior) {//CC 1 Ccog 1
-				VendedorEnPlantilla v2 = (VendedorEnPlantilla) v;
+				Vendedor v2 = (Vendedor) v;
 				out.println("  Nombre: " + v2.getNombre() + " Id: " + v2.getId() + " DNI: "+ v2.getDni()+" TotalVentasMes: "
 						+ v2.getTotalVentas());
 			}
 			out.println();
 			out.println("Prácticas");
 			for (Vendedor v : practicas) {//CC 1 Ccog 1
-				vendedorEnPracticas v3 = (vendedorEnPracticas) v;
+				Vendedor v3 = (Vendedor) v;
 				out.println("  Nombre: " + v3.getNombre() + " Id: " + v3.getId() + " DNI: "+ v3.getDni()+" TotalVentasMes: "
 						+ v3.getTotalVentas());
 			}

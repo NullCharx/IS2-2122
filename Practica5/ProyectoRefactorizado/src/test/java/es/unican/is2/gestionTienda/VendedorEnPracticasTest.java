@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class VendedorEnPracticasTest {
 	
-	private static vendedorEnPracticas sut;
+	private static Vendedor sut;
 
 	@Before
 	public void setUp(){
@@ -50,9 +50,9 @@ public class VendedorEnPracticasTest {
 	
 	@Test
 	public void testEquals() {
-		vendedorEnPracticas igual = new vendedorEnPracticas("Ana", "1", "11111111A");
-		vendedorEnPracticas distintoId = new vendedorEnPracticas("Ana", "2", "11111111A");
-		vendedorEnPracticas distintoNombre = new vendedorEnPracticas("Pepe", "1", "222222222A");
+		Vendedor igual = new vendedorEnPracticas("Ana", "1", "11111111A");
+		Vendedor distintoId = new vendedorEnPracticas("Ana", "2", "11111111A");
+		Vendedor distintoNombre = new vendedorEnPracticas("Pepe", "1", "222222222A");
 		
 		assertTrue(sut.equals(igual));
 		assertFalse(sut.equals(distintoId));

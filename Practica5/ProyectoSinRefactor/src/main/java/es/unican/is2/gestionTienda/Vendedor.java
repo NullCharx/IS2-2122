@@ -13,7 +13,7 @@ package es.unican.is2.gestionTienda;
 //EFF: 0
 //CBO (AFF U EFF): 2
 //DIT: 0
-//NOC: 1
+//NOC: 2
 //CCog: 0
 public abstract class Vendedor {
 

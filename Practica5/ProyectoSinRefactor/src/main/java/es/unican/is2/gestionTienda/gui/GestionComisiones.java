@@ -23,7 +23,7 @@ import fundamentos.Mensaje;
 //CBO (AFF U EFF): 0
 //DIT: 0
 //NOC: 0
-//Ccog: 
+//Ccog: 23
 public class GestionComisiones {
 
 
@@ -140,7 +140,7 @@ public class GestionComisiones {
 	public static class ComparadorVendedorVentas implements Comparator<Vendedor>  {
 
 		// Complejidad Cicloamtica 1 + 1 + 1 = 3
-		//Complejidad cognitiva: 
+		//Complejidad cognitiva: 2
 		public int compare(Vendedor o1, Vendedor o2) {
 			if (o1.getTotalVentas()>o2.getTotalVentas())//CC 1, Ccog 1
 				return -1;
