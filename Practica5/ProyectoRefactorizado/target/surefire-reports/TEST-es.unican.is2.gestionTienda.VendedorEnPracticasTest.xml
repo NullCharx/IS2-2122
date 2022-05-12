@@ -27,7 +27,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:/Program Files/apache-maven-3.8.4/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="sonar.login" value="2b927e08bc13ea43715c479904584c7d0479a48d"/>
+    <property name="sonar.login" value="ba4b2df79cccf7e0e8921bd5a89d68b4a723473c"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\carlo\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\carlo\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\carlo\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-13.0.2\bin;C:\windows\system32;C:\Windows;C:\windows\system32\Wbem;C:\windows\system32\WindowsPowerShell\v1.0;C:\windows\system32\OpenSSH;C:\Program Files\MATLAB\R2018b\runtime\win64;C:\Program Files\MATLAB\R2018b\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files\swipl\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\bin;C:\Program Files\apache-maven-3.8.4\bin;C:\Users\carlo\AppData\Local\GitHubDesktop\bin;C:\ProgramData\carlo\GitHubDesktop\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
     <property name="maven.conf" value="C:/Program Files/apache-maven-3.8.4/conf"/>
     <property name="jdk.debug" value="release"/>
@@ -41,12 +41,12 @@
     <property name="sonar.host.url" value="http://localhost:9000"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.specification.version" value="17"/>
-    <property name="sonar.projectKey" value="JavaSonarQubeDefinitivo"/>
+    <property name="sonar.projectKey" value="PROYECTOSONARSUERDEFINITIVO"/>
     <property name="user.name" value="carlo"/>
     <property name="java.class.path" value="C:/Program Files/apache-maven-3.8.4/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify sonar:sonar -Dsonar.projectKey=JavaSonarQubeDefinitivo -Dsonar.host.url=http://localhost:9000 -Dsonar.login=2b927e08bc13ea43715c479904584c7d0479a48d"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify sonar:sonar -Dsonar.projectKey=PROYECTOSONARSUERDEFINITIVO -Dsonar.host.url=http://localhost:9000 -Dsonar.login=ba4b2df79cccf7e0e8921bd5a89d68b4a723473c"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17.0.1"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
